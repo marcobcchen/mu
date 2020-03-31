@@ -1,0 +1,22 @@
+stages:
+  - test
+  - lint-test
+  - build
+
+before_script:
+  - npm install
+  
+test:
+  stage: test
+  script:
+  - npm test
+
+
+lint-test:
+  before_script:
+  - npm install --save-dev standard snazzy
+  stage: lint-test
+  script:
+  - npm run lint
+  
+##build 暫時移除##
