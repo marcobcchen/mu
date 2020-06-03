@@ -328,7 +328,7 @@ const Header = (props: IApp) => {
       {/* </HideOnScroll> */}
       
       <div className={classes.toolbarMargin} />
-      {/* <Typography variant="body1">
+      <Typography variant="body1">
         {[...new Array(50)]
           .map(
             () =>
@@ -338,7 +338,7 @@ const Header = (props: IApp) => {
           Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
           )
           .join("\n")}
-      </Typography> */}
+      </Typography>
        
     </React.Fragment>
   );
