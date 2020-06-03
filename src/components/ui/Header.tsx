@@ -153,7 +153,7 @@ const Header = (props: IApp) => {
   };
 
   const clickHandler = (e: React.BaseSyntheticEvent<{}>) => {
-    console.log(e.currentTarget);
+    // console.log(e.currentTarget);
     setAnchorEl(e.currentTarget);
     setOpen(true);
   };
@@ -162,7 +162,7 @@ const Header = (props: IApp) => {
     setAnchorEl(null);
     setOpen(false);
 
-    console.log(selectedItem);
+    // console.log(selectedItem);
   };
 
   const selectedHandler = (e: React.MouseEvent<{}>, index: number) => {
