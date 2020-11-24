@@ -6,6 +6,8 @@ import Footer from "./components/ui/Footer";
 import theme from "./components/ui/theme";
 import { Typography } from "@material-ui/core";
 
+import LandingPage from './pages/LandingPage'
+
 function App() {
   const [value, setValue] = useState(0);
   const [selectedItem, setSelectedItem] = useState(0);
@@ -15,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Header value={value} setValue={setValue} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
         <Switch>
-          <Route exact path="/" component={()=> <div style={{height: '1500px'}}><Typography>Home</Typography></div>} />
+          <Route exact path="/" component={()=> <LandingPage />} />
           <Route path="/services" component={()=> <div><Typography>Services</Typography></div>} />
           <Route path="/revolution" component={()=> <div><Typography>Revolution</Typography></div>} />
           <Route path="/about" component={()=> <div><Typography>About Us</Typography></div>} />

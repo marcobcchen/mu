@@ -52,6 +52,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginRight: "25px",
     fontSize: "0.6rem",
     textTransform: "none",
+    '&:hover': {
+      background: theme.palette.secondary.light,
+    }
   },
   menu: {
     backgroundColor: theme.palette.common.blue,
@@ -328,7 +331,7 @@ const Header = (props: IApp) => {
       {/* </HideOnScroll> */}
       
       <div className={classes.toolbarMargin} />
-      <Typography variant="body1">
+      {/* <Typography variant="body1">
         {[...new Array(50)]
           .map(
             () =>
@@ -338,7 +341,7 @@ const Header = (props: IApp) => {
           Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
           )
           .join("\n")}
-      </Typography>
+      </Typography> */}
        
     </React.Fragment>
   );
